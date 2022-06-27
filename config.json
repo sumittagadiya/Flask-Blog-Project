@@ -11,6 +11,6 @@
         "no_of_posts" : 3,
         "email" : "abc@testing.com",
         "password" : "abc@123",
-        "upload_location" : "D:\\flask_project\\static\\assets\\img"
+        "upload_location" : "D:\\Flask-Blog-Project\\static\\assets\\img"
     }
 }

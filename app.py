@@ -151,11 +151,11 @@ def uploader():
     if "email" in session and session['email']==params['email']:
         if request.method=='POST':
             f = request.files['file1']
-            if str(f.filename).endswith(('.jpg','.jpeg','.png')):
+            if str(f.filename).endswith(('.jpg','.jpeg','.png','.svg')):
                 f.save(os.path.join(app.config['UPLOAD_FOLDER'], secure_filename(f.filename)))
                 return "Uploaded successfully!"
             else :
-                return '<h1>Please Upload ".jpg", ".jpeg" or ".png" file </h1>'
+                return '<h1>Please Upload ".jpg", ".jpeg", ".svg" or ".png" file </h1>'
 
 @app.route('/logout')
 def logout():
